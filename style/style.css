@@ -12,6 +12,18 @@
     display: flex;
     
   }
+
+  .btn-primary{
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 16px 19px;
+    border-radius: 0.5rem;
+    background-color:#FF900E;
+    color: white;
+    border: none;
+    margin-bottom: 32px;
+    margin-top: 24px;
+  }
   
   .text-grey{
     color: #424242;
@@ -21,11 +33,16 @@
     color: #727272;
   }
 
+  .bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+
   /* header style */
 
   /* nav related style */
   .navbar{
     justify-content: space-between;
+    align-items: center;
 
   }
     
@@ -36,4 +53,30 @@
   .nav-link{
     text-decoration: none;
     font-weight: 500;
+  }
+
+  .navbar, .banner{
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .brand{
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .banner-container{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .banner-title{
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  .img-banner{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 32px;
   }
