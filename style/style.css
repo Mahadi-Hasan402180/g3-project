@@ -1,82 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared style */
+.display-flex {
+  display: flex;
+
+}
+
+.btn-primary {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 16px 19px;
+  border-radius: 0.5rem;
+  background-color: #FF900E;
+  color: white;
+  border: none;
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+
+.text-grey {
+  color: #424242;
+}
+
+.text-light-grey {
+  color: #727272;
+}
+
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* nav related style */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar,
+.banner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.banner-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.img-banner {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* teams related style */
+.teams {
+  align-items: center;
+}
+
+.teams-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-right: 1.5rem;
+
+}
+
+
+
+
+
+
+/* responsive  */
+
+
+@media screen and (max-width:576px) {
+
+  /* responsive for header */
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+
   }
 
-  /* shared style */
-  .display-flex{
-    display: flex;
-    
-  }
-
-  .btn-primary{
-    font-weight: 600;
-    font-size: 1.25rem;
-    padding: 16px 19px;
-    border-radius: 0.5rem;
-    background-color:#FF900E;
-    color: white;
-    border: none;
-    margin-bottom: 32px;
-    margin-top: 24px;
-  }
-  
-  .text-grey{
-    color: #424242;
-  }
-
-  .text-light-grey{
-    color: #727272;
-  }
-
-  .bg-light{
-    background-color: rgba(255, 144, 14, 0.1);
-  }
-
-  /* header style */
-
-  /* nav related style */
-  .navbar{
-    justify-content: space-between;
-    align-items: center;
-
-  }
-    
-  .nav-item{
-    list-style: none;
-    margin-right: 30px;
-   }
-  .nav-link{
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .navbar, .banner{
-    max-width: 1120px;
-    margin: 0 auto;
-  }
-
-  .brand{
+  .banner-title {
     font-weight: 700;
     font-size: 2rem;
   }
-  .banner-container{
-    max-width: 600px;
-    margin: 0 auto;
+
+  .brand {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  /* responsive for main */
+ 
+  .teams {
+    flex-direction: column;
     text-align: center;
   }
 
-  .banner-title{
-    font-weight: 700;
-    font-size: 3rem;
+  .teams-img {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
   }
 
-  .img-banner{
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 32px;
-  }
+}
